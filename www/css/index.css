@@ -37,7 +37,7 @@ body {
     );
     background-attachment:fixed;
     font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
+    font-size:20px;
     height:100%;
     margin:0px;
     padding:0px;
@@ -59,6 +59,7 @@ body {
                                    /* offset horizontal: half of text area width */
 }
 
+
 /* Landscape layout (with min-width) */
 @media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
     .app {
@@ -76,16 +77,36 @@ h1 {
     overflow:visible;
     padding:0px;
     text-align:center;
+    color:navy;
 }
 
-.event {
+h2 {
+    color:navy;
+    font-size:15px;
+
+}
+
+.button {
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.value {
+    font-family:'Times New Roman';
+}
+/*.event {
     border-radius:4px;
     -webkit-border-radius:4px;
     color:#FFFFFF;
     font-size:12px;
     margin:0px 30px;
     padding:2px 0px;
-}
+}*/
 
 .event.listening {
     background-color:#333333;
