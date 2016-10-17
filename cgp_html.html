@@ -12,41 +12,14 @@
             <h1>Welcome to Kitchen Cop</h1>
             <h2>A Product Studio Project at Cornell-Tech</h2>
         <div class = "sign-in">
-            <form>
-                <input type="button" value="Click to log in"/>
-            </form>
+            <button id="myButton">Click to log in</button>
+            <script type="text/javascript">
+            document.getElementById("myButton").addEventListener("click", myFunction, true);
+            function myFunction() {
+                window.location.href="tab.html";
+            }
+            </script>
         </div>
-<!-- next Page -->
-        <div class="tabs">
-    
-   <div class="tab">
-       <input type="radio" id="tab-1" name="tab-group-1" checked>
-       <label for="tab-1">Scanner</label>
-       
-       <div class="content">
-           Click here for your scanner
-       </div> 
-   </div>
-    
-   <div class="tab">
-       <input type="radio" id="tab-2" name="tab-group-1">
-       <label for="tab-2">Recall Information</label>
-       
-       <div class="content">
-           List of recent recall information
-       </div> 
-   </div>
-    
-    <div class="tab">
-       <input type="radio" id="tab-3" name="tab-group-1">
-       <label for="tab-3">Purchase History</label>
-     
-       <div class="content">
-           List of purchase history
-       </div> 
-   </div>
-    
-</div>
 
     
     <!--<script type="text/javascript" src="cordova.js"></script>
