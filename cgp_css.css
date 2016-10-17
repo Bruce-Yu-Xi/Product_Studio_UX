@@ -1,0 +1,91 @@
+body {
+    font-family: "Palatino Linotype";
+    background-color: azure;
+}
+
+
+.introduction {
+    background-color: azure;
+    font-family: "Palatino Linotype";
+
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+    color:navy;
+}
+
+h2 {
+    color:navy;
+    font-size:15px;
+    text-align:center;
+
+}
+
+.sign-in {
+    font-family: "Palatino Linotype";
+    padding: 15px 200px;
+
+}
+.homepage {
+    font-family: "Palatino Linotype";
+    background-color: honeydew;
+    padding: 15px 200px;
+}
+
+
+.botton {
+    font-family: "Palatino Linotype";
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
+.tabs {
+  position: relative;   
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #eee; 
+  padding: 10px; 
+  border: 1px solid #ccc; 
+  margin-left: -1px; 
+  position: relative;
+  left: 1px; 
+}
+.tab [type=radio] {
+  display: none;   
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: white;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #ccc; 
+}
+[type=radio]:checked ~ label {
+  background: white;
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
+}
